@@ -11,3 +11,9 @@ wizard_damage = 150
 elf_damage = 90
 human_damage = 99
 dragon_damage = 50
+
+print(wizard)
+print(elf)
+print(human)
+
+input("Choose your character:")
