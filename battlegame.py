@@ -48,3 +48,32 @@ while True:
                 )  # Inform the player that the dragon won the battle
                 break  # Break out of the loop to end the battle
             
+    elif answer == "2":  # Check if the user chose elf
+        character = elf  # Set the character variable to elf
+        # Start a loop for the elf's battle with the dragon
+        while (
+            elf_hp > 0 and dragon_hp > 0
+        ):  # Continue the loop while both elf and dragon are alive
+            # Elf attacks first
+            dragon_hp -= elf_damage  # Subtract elf's damage from dragon's health
+            print(
+                f"{character} attacked dragon for {elf_damage} damage."
+            )  # Display message indicating elf's attack
+
+            if dragon_hp <= 0:  # Check if dragon is defeated after elf's attack
+                print(
+                    "You have defeated the dragon!"
+                )  # Congratulate the player for defeating the dragon
+                break  # Break out of the loop to end the battle
+
+            # Dragon attacks back
+            elf_hp -= dragon_damage  # Subtract dragon's damage from elf's health
+            print(
+                f"Dragon attacked {character} for {dragon_damage} damage."
+            )  # Display message indicating dragon's attack
+
+            if elf_hp <= 0:  # Check if elf is defeated after dragon's attack
+                print(
+                    "The dragon has defeated you!"
+                )  # Inform the player that the dragon won the battle
+                break  # Break out of the loop to end the battle
