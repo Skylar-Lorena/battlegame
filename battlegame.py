@@ -23,3 +23,6 @@ while True:
         character = wizard
 
         while wizard_hp > 0 and dragon_hp > 0:
+             # Start a loop for the wizard's battle with the dragon
+        while wizard_hp > 0 and dragon_hp > 0:
+            
