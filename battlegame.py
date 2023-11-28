@@ -19,3 +19,7 @@ while True:
     print(human)
 
     answer = input("Choose your character (1-Wizard, 2-Elf, 3-Human): ")
+    if answer == "1":
+        character = wizard
+
+        while wizard_hp > 0 and dragon_hp > 0:
