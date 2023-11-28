@@ -18,4 +18,4 @@ while True:
     print(elf)
     print(human)
 
-input("Choose your character:")
+    answer = input("Choose your character (1-Wizard, 2-Elf, 3-Human): ")
