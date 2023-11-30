@@ -22,7 +22,7 @@ print("1.", wizard)
 print("2.", elf)
 print("3.", human)
 
-character = input("Enter your choice: ")
+character_input = input("Enter your choice: ")
 
 # Task 3: Set up infinite while loop to handle player choice
 while True:
