@@ -47,7 +47,7 @@ while True:
         my_damage = human_damage
         break
 
-    elif character_input.lower() == "exit" or character_input== "4":
+    elif character_input.lower() == "exit" or character_input == "4":
         print("Goodbye")
         sys.exit(0)
 
@@ -72,3 +72,14 @@ while True:
     if my_hp <= 0:
         print("You have lost the battle!")
         break
+
+    # Replay prompt
+    while True:
+        play_again = input("Do you want to play again? (Y/N): ")
+
+        if play_again.lower() == "y":
+            break
+        elif play_again.lower() == "n":
+            sys.exit(0)
+        else:
+            print("Invalid input. Please enter Y or N.")
