@@ -23,3 +23,33 @@ print("2.", elf)
 print("3.", human)
 
 character = input("Enter your choice: ")
+
+# Task 3: Set up infinite while loop to handle player choice
+while True:
+    if character == "1":
+        character = wizard
+        my_hp = wizard_hp
+        my_damage = wizard_damage
+        break
+
+
+    
+    elif character == "2":
+        character = elf
+        my_hp = elf_hp
+        my_damage = elf_damage
+        break
+
+
+    
+    elif character == "3":
+        character = human
+        my_hp = human_hp
+        my_damage = human_damage
+        break
+
+
+    
+else:
+        print("Unknown character")
+        character = input("Enter your choice: ")
