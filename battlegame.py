@@ -26,24 +26,23 @@ character = input("Enter your choice: ")
 
 # Task 3: Set up infinite while loop to handle player choice
 while True:
-    if character == "1":
+    if character_input.lower() == wizard.lower() or character_input == "1":
         character = wizard
         my_hp = wizard_hp
         my_damage = wizard_damage
         break
 
-    elif character == "2":
+    elif character_input.lower() == elf.lower() or character_input == "2":
         character = elf
         my_hp = elf_hp
         my_damage = elf_damage
         break
 
-    elif character == "3":
+    elif character_input.lower() == human.lower() or character_input == "3":
         character = human
         my_hp = human_hp
         my_damage = human_damage
         break
-
 
     else:
         print("Unknown character")
