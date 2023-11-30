@@ -1,3 +1,5 @@
+import sys
+
 # Task 1: Declare variables for characters and their hp and damage
 wizard = "Wizard"
 elf = "Elf"
@@ -21,6 +23,7 @@ print("Choose your character: ")
 print("1.", wizard)
 print("2.", elf)
 print("3.", human)
+print("4. Exit")
 
 character_input = input("Enter your choice: ")
 
@@ -43,6 +46,10 @@ while True:
         my_hp = human_hp
         my_damage = human_damage
         break
+
+    elif character_input.lower() == "exit" or character_input== "4":
+        print("Goodbye")
+        sys.exit(0)
 
     else:
         print("Unknown character")
